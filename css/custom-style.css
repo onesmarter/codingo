@@ -1482,7 +1482,7 @@ p.p-block
     max-width: 400px;
     text-align: left;
 }
-.form-content .form-items {
+.form-content .form-items { 
     display: block;
     width: 100%;
     max-width: 400px;
