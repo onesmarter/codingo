@@ -5,6 +5,24 @@ $(document).ready(function() {
         $('a.menu').removeClass("active");
         $(this).addClass("active");
     });
+    $(".services-choose-block button").click(function() {
+        $(".other-block").hide();
+        $(".services-choose-block button").removeClass("active");
+        $(this).addClass("active");
+    });
+    $(".services-choose-block #oservices").click(function() {
+        $(".other-block").show();
+    });    
+
+    $('.form-items input, .form-items textarea').focus(function() {
+        $(this).closest('.form-group').addClass('focused');
+    });
+    $('.form-items input, .form-items textarea').blur(function() {
+        var inputValue = $(this).val();
+        if (inputValue == "") {
+            $(this).parents('.form-group').removeClass('focused');
+        }
+    });    
 
     //menu shrink
     $(window).scroll(function() {
@@ -16,9 +34,5 @@ $(document).ready(function() {
         }
     });
 
-    $("button #other-services").click(function() {
-        console.log("zdfs");
-        $(".other-block").show();
-    });
 
 });

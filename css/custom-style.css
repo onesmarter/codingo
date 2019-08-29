@@ -1468,66 +1468,8 @@ p.p-block
 
 
 /************************************************ New Contact Page ************************************************/
-.form-content .custom-options input[type="checkbox"]:not(:checked) + label, .form-content .custom-options input[type="checkbox"]:checked + label, .form-content .custom-options input[type="radio"]:not(:checked) + label, .form-content .custom-options input[type="radio"]:checked + label {
-    position: relative;
-    padding-left: 0;
-    cursor: pointer;
-    display: inline;
-    color: #606060;
-    background-color: #F7F7F7;
-    font-size: 13px;
-    font-weight: 400;
-    margin-left: 0;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-right: 10px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    flex-grow: 1;
-    text-align: center;
-}
-.form-content .custom-options input[type="checkbox"]:not(:checked) + label, .form-content .custom-options input[type="checkbox"]:checked + label, .form-content .custom-options input[type="radio"]:not(:checked) + label, .form-content .custom-options input[type="radio"]:checked + label {
-    color: #606060;
-    background-color: #F7F7F7;
-}
-.form-content input[type="checkbox"]:not(:checked) + label, .form-content input[type="checkbox"]:checked + label, .form-content input[type="radio"]:not(:checked) + label, .form-content input[type="radio"]:checked + label {
-    color: #000;
-    font-weight: 700;
-}
-.form-content input[type="checkbox"]:not(:checked) + label, .form-content input[type="checkbox"]:checked + label, .form-content input[type="radio"]:not(:checked) + label, .form-content input[type="radio"]:checked + label {
-    position: relative;
-    padding-left: 23px;
-    cursor: pointer;
-    display: inline;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    margin-left: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.form-content .custom-options input[type="checkbox"]:not(:checked), .form-content .custom-options input[type="checkbox"]:checked, .form-content .custom-options input[type="radio"]:not(:checked), .form-content .custom-options input[type="radio"]:checked {
-    position: absolute;
-    left: -9999px;
-}
-.form-content .custom-options input[type="checkbox"]:checked + label, .form-content .custom-options input[type="radio"]:checked + label {
-    color: #fff;
-    background-color: #57D38C;
-    -webkit-box-shadow: 0 3px 8px rgba(74, 230, 142, 0.35);
-    box-shadow: 0 3px 8px rgba(74, 230, 142, 0.35);
-}
+
+
 .form-content input, .form-content .dropdown-toggle.btn-default {
     border: 1px solid rgba(0, 149, 255, 0);
     background-color: #f7f7f7;
@@ -1565,4 +1507,85 @@ p.p-block
 .other-block
 {
     display: none;
+}
+h3.form-title
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 15px;
+}
+.block-form label
+{
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+    text-align: left;    
+}
+.block-form textarea
+{
+    resize: none;
+    border: 1px solid rgba(0, 149, 255, 0);
+    background-color: #f7f7f7;
+    min-height: 140px;    
+}
+button.form-cancel, button.form-save
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 35px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.3s ease 0.0s;    
+    border-radius: 0px;
+    color: #999 !important;    
+}
+button.form-save
+{
+    background: #0ec7e3;
+    color: #fff !important;    
+}   
+.block-form .form-content
+{
+    padding: 80px 0px;    
+}
+.services-choose-block button
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.services-choose-block button.active
+{
+    color: #fff !important;
+    background-color: #0ec7e3;
+    -webkit-box-shadow: 0 3px 8px rgba(14, 199, 227, 0.59) !important;
+    box-shadow: 0 3px 8px rgba(14, 199, 227, 0.59) !important;
+}
+.form-group .form-control
+{
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+.form-items .form-group
+{
+    position: relative;
+}
+.form-items .form-group.focused:before {
+    visibility: visible;
+    width: 100%;
+}
+.form-items .form-group:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0ec7e3;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
 }
